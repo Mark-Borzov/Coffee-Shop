@@ -163,7 +163,7 @@ body{
 .primary__title{
     font-size: 130px;
     font-weight: 800;
-    line-height: 140px;
+    line-height: 110%;
     position: relative;
 }
 
@@ -276,44 +276,176 @@ body{
 
 /* End of the "primary" section */
 
+.explore{
+    width: 100%;
+    position: relative;
+}
 
+.explore__glass{
+    position: absolute;
+    width: 500px;
+    left: -260px;
+    transform: rotate(-40deg);
+    z-index: -1;
+}
 
+.explore__glass img{
+    width: 100%;
+}
 
+.explore__body{
+    max-width: 1400px;
+    margin: auto;
+    padding: 100px 20px 100px 20px;
+    text-align: center;
+}
 
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
 
+.head__title{
+    font-size: 65px;
+    line-height: 120%;
+    font-weight: 800;
+}
 
+.head__subtitle{
+    font-size: 30px;
+    color: #64646A;
+    max-width: 750px;
+}
 
+.explore__container{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+}
 
+.food-item{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    padding: 50px 30px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEEFF1;
+}
 
+.food-item__title{
+    font-size: 35px;
+    font-weight: 600;
+    align-self: flex-start;
+}
 
+.food-item__subtitle{
+    color: #64646A;
+    font-size: 24px;
+    margin-top: 10px;
+}
 
+.food-item__photo{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    overflow: hidden;
+}
 
+.food-item__photo img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
+.food-item__button{
+    width: 250px;
+    height: 60px;
+    margin-top: 50px;
+}
 
+.food-item__button a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    transition: 0.2s all;
+}
 
+.food-item__button a:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    box-shadow: 0px 0px 10px black; 
+}
 
+/* End of the "explore" section */
 
+.about{
+    max-width: 1400px;
+    margin: auto;
+    padding: 100px 20px 100px 20px;
+    display: flex;
+    gap: 100px;
+}
 
+.about__photo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 
+.about__photo img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
+.about__description{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+}
 
+.about__button{
+    width: 200px;
+    height: 60px;
+    margin-top: 50px;
+}
 
+.about__button a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    transition: 0.2s all;
+}
 
+.about__button a:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    box-shadow: 0px 0px 10px black; 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* End of the "about" section */
 
 
 
@@ -352,11 +484,11 @@ body{
 @media(max-width: 1150px){
 
     .primary__title{
-        font-size: calc(50px + 80 * (100vw / 1100));
+        font-size: calc(55px + 25 * (100vw / 1100));
     }
 
     .primary__title{
-        font-size: calc(50px + (80 + 80 * 0.7) * ((100vw - 320px) / 1100));
+        font-size: calc(55px + (25 + 25 * 0.7) * ((100vw - 320px) / 1100));
     }
 
     .primary__subtitle{
@@ -364,6 +496,22 @@ body{
     }
 
     .primary__subtitle{
+        font-size: calc(25px + (5 + 5 * 0.7) * ((100vw - 320px) / 1100));
+    }
+
+    .head__title{
+        font-size: calc(40px + 25 * (100vw / 1100));
+    }
+
+    .head__title{
+        font-size: calc(40px + (25 + 25 * 0.7) * ((100vw - 320px) / 1100));
+    }
+
+    .head__subtitle{
+        font-size: calc(25px + 5 * (100vw / 1100));
+    }
+
+    .head__subtitle{
         font-size: calc(25px + (5 + 5 * 0.7) * ((100vw - 320px) / 1100));
     }
 
@@ -387,9 +535,13 @@ body{
         flex-direction: column;
     }
 
-    .primary__title{
+    .primary__description{
+        align-items: center;
         text-align: center;
-        line-height: 120%;
+    }
+
+    .primary__title{
+        max-width: 1000px;
     }
 
     .primary__title span{
@@ -400,9 +552,7 @@ body{
     }
 
     .primary__subtitle{
-        max-width: 1000px;
-        text-align: center;
-        margin: auto;
+        max-width: 800px;
         margin-top: 140px;
     }
 
@@ -414,6 +564,41 @@ body{
         height: 500px;
     }
 
+    .explore__container{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .food-item{
+        text-align: center;
+        max-width: 500px;
+    }
+    
+    .food-item__title{
+        align-self: center;
+    }
+
+    .food-item__subtitle{
+        max-width: 300px;
+        font-size: 25px;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .about__description{
+        align-items: center;
+    }
+
+    .about__photo{
+        max-width: 500px;
+        overflow: hidden;
+    }
 }
 
 
@@ -546,6 +731,18 @@ body{
 
 /* Adaptive Phone */
 @media(max-width: 768px){
+
+    .primary{
+        padding: 110px 20px 0px 20px;
+    }
+
+    .explore__body{
+        padding: 100px 20px 10px 20px;  
+    }
+
+    .about{
+        padding: 100px 20px 10px 20px; 
+    }
 
 }
 
