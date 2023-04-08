@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SwiperCSS/swiper.css">
     <link rel="stylesheet" href="StyleCSS/style.css">
     <link rel="shortcut icon" href="./Img/coffee.png">
     <title>Coffee Shop</title>
@@ -16,16 +17,20 @@
             <!-- dynamic-background -->
         </div>
 
+        <div class="progress">
+            <!-- progress-bar -->
+        </div>
+
         <header class="header">
             <div class="header__body">
-                <div class="header__logo">
+                <div class="header__logo anim-items anim-no-hide">
                     <img src="./Img/logo.png" alt="">
                 </div>
-                <div class="header__burger" id="headerBurger">
+                <div class="header__burger anim-items anim-no-hide" id="headerBurger">
                     <span></span>
                 </div>
                 <nav class="header__menu" id="headerMenu">
-                    <ul class="header__list">
+                    <ul class="header__list anim-items anim-no-hide">
                         <li>
                             <a href="#cafe-menu" class="header__link">Cafe Menu</a>
                         </li>
@@ -33,10 +38,10 @@
                             <a href="#about-us" class="header__link">About Us</a>
                         </li>
                         <li>
-                            <a href="#" class="header__link">Alowishus Catering</a>
+                            <a href="#alowishus" class="header__link">Alowishus Catering</a>
                         </li>
                         <li>
-                            <a href="#" class="header__link">Find Us</a>
+                            <a href="#contact" class="header__link">Find Us</a>
                         </li>
                         <li>
                             <div class="header__link header__link-basket">
@@ -47,7 +52,7 @@
                         </li>
                         <li>
                             <div class="header__link header__link-button">
-                                <a href="">Buy gift vouchers</a>
+                                <button class="section__button" href="">Buy gift vouchers</button>
                             </div>
                         </li>
                     </ul>
@@ -59,13 +64,13 @@
 
         <section class="primary">
             <div class="primary__description">
-                <div class="primary__title">
+                <div class="primary__title anim-items anim-no-hide">
                     Alowishus Delicious Coffee <span><img src="./Img/revard.png" alt=""></span>
                 </div>
-                <div class="primary__subtitle">
+                <div class="primary__subtitle anim-items anim-no-hide">
                     A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.
                 </div>
-                <div class="primary__footer">
+                <div class="primary__footer anim-items anim-no-hide">
                     <div class="primary__button">
                         <a href="">Download App</a>
                     </div>
@@ -74,11 +79,11 @@
                     </div>
                 </div>
             </div>
-            <div class="primary__photo">
-                <div class="primary__revard">
+            <div class="primary__photo anim-items anim-no-hide">
+                <div class="primary__revard anim-items anim-no-hide">
                     <img src="./Img/revard.png" alt="">
                 </div>
-                <div class="rating">
+                <div class="rating anim-items anim-no-hide">
                     <div class="rating__container">
                         <div class="rating__star">
                             <img src="./Img/star.png" alt="">
@@ -111,14 +116,14 @@
             </div>
             <div class="explore__body">
                 <div class="head">
-                    <div class="head__title">
+                    <div class="head__title anim-items anim-no-hide">
                         Explore Our Alowishus
                     </div>
-                    <div class="head__subtitle">
+                    <div class="head__subtitle anim-items anim-no-hide">
                         A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.
                     </div>
                 </div>
-                <div class="explore__container">
+                <div class="explore__container anim-items anim-no-hide">
                     <div class="food-item">
                         <div class="food-item__title">
                             Our Catering
@@ -168,19 +173,19 @@
        <!-- End of the "explore" section -->
 
        <section class="about" id="about-us">
-            <div class="about__photo">
+            <div class="about__photo anim-items anim-no-hide">
                 <img src="./Img/picture6.png" alt="">
             </div>
             <div class="about__description">
                 <div class="head">
-                    <div class="head__title">
+                    <div class="head__title anim-items anim-no-hide">
                         Order Your Favourite Coffee
                     </div>
-                    <div class="head__subtitle">
+                    <div class="head__subtitle anim-items anim-no-hide">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </div>
                 </div>
-                <div class="about__button">
+                <div class="about__button anim-items anim-no-hide">
                     <a href="">Order Now</a>
                 </div>
             </div>
@@ -194,14 +199,14 @@
         </div>
             <div class="selling__body">
                 <div class="head">
-                    <div class="head__title">
+                    <div class="head__title anim-items anim-no-hide">
                         Best Selling Coffee
                     </div>
-                    <div class="head__subtitle">
+                    <div class="head__subtitle anim-items anim-no-hide">
                         A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.
                     </div>
                 </div>
-                <div class="selling__container">
+                <div class="selling__container anim-items anim-no-hide">
                     <div class="coffee-item">
                         <div class="coffee-item__head">
                             <div class="coffee-item__photo">
@@ -299,18 +304,18 @@
             <div class="instant__body">
                 <div class="instant__description">
                     <div class="head">
-                        <div class="head__title">
+                        <div class="head__title anim-items anim-no-hide">
                             Best Selling Coffee
                         </div>
-                        <div class="head__subtitle">
+                        <div class="head__subtitle anim-items anim-no-hide">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. 
                         </div>
                     </div>
-                    <div class="instant__button">
+                    <div class="instant__button anim-items anim-no-hide">
                         <a href="">Download our app</a>
                     </div>
                 </div>
-                <div class="instant__photo">
+                <div class="instant__photo anim-items anim-no-hide">
                     <div class="instant__picture">
                         <img src="./Img/picture11.png" alt="">
                     </div>
@@ -325,10 +330,243 @@
         </section>
 
         <!-- End of the "instant" section -->
-        
 
+        <section class="reviews" id="alowishus">
+            <div class="reviews__glass">
+                <img src="./Img/picture6.png" alt="">
+            </div>
+            <div class="reviews__body">
+                <div class="reviews__description">
+                    <div class="head">
+                        <div class="head__title anim-items anim-no-hide">
+                            What Our Customers Say
+                        </div>
+                    </div>
+                    <div class="reviews__info anim-items anim-no-hide">
+                        <div class="reviews__mark">
+                            4.9
+                        </div>
+                        <div class="reviews__rating">
+                            <div class="reviews__stars">
+                                <div class="reviews__star">
+                                    <img src="./Img/gold-star.png" alt="">
+                                </div>
+                                <div class="reviews__star">
+                                    <img src="./Img/gold-star.png" alt="">
+                                </div>
+                                <div class="reviews__star">
+                                    <img src="./Img/gold-star.png" alt="">
+                                </div>
+                                <div class="reviews__star">
+                                    <img src="./Img/gold-star.png" alt="">
+                                </div>
+                                <div class="reviews__star">
+                                    <img src="./Img/gold-star.png" alt="">
+                                </div>
+                            </div>
+                            <div class="reviews__text">
+                                based on 2452+ reviews
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__container">
+                    <div class="reviews-item anim-items anim-no-hide">
+                        <div class="reviews-item__photo">
+                            <img src="./Img/picture12.jpg" alt="">
+                        </div>
+                        <div class="reviews-item__body">
+                            <div class="reviews-item__container">
+                                <div class="reviews-item__name">
+                                    Imam White
+                                </div>
+                                <div class="reviews__stars">
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-item__text">
+                                “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-item anim-items anim-no-hide">
+                        <div class="reviews-item__photo">
+                            <img src="./Img/picture13.jpg" alt="">
+                        </div>
+                        <div class="reviews-item__body">
+                            <div class="reviews-item__container">
+                                <div class="reviews-item__name">
+                                    Brooklyn Simmons
+                                </div>
+                                <div class="reviews__stars">
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                    <div class="reviews__star">
+                                        <img src="./Img/gold-star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-item__text">
+                                “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End of the "reviews" section -->
+
+        <footer class="footer" id="contact">
+            <div class="footer__glass">
+                <img src="./Img/picture5.png" alt="">
+            </div>
+            <div class="footer__body">
+                <div class="footer__alowishus">
+                    <div class="footer__left anim-items anim-no-hide">
+                        <div class="footer__logo">
+                            <img src="./Img/logo.png" alt="">
+                        </div>
+                        <div class="footer__text">
+                            We made it our mission to create community everyday and grow meaningful, lasting relationships with our staff, our suppliers and of course you, our customers.
+                        </div>
+                    </div>
+                    <div class="footer__right anim-items anim-no-hide">
+                        <div class="footer__title">
+                            Contact Alowishus!
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__picture">
+                                <img src="./Img/email.png" alt="">
+                            </div>
+                            <div class="footer__name">
+                                alowishus@gmai.com
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__picture">
+                                <img src="./Img/phone-call.png" alt="">
+                            </div>
+                            <div class="footer__name">
+                                +110 214 214 2451
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__picture">
+                                <a href="">
+                                    <img src="./Img/facebook-app-symbol.png" alt="">
+                                </a>
+                            </div>
+                            <div class="footer__picture">
+                                <a href="">
+                                    <img src="./Img/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="footer__picture">
+                                <a href="">
+                                    <img src="./Img/twitter.png" alt="">
+                                </a>
+                            </div>
+                            <div class="footer__picture">
+                                <a href="">
+                                    <img src="./Img/linkedin.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__locations">
+                    <div class="footer__left anim-items anim-no-hide">
+                        <div class="footer__title">
+                            Store Locations
+                        </div>
+                        <div class="footer__text">
+                            Find your nearest Alowishus store with opening hours, location and contact details.
+                        </div>
+                        <div class="footer__link">
+                            <a href="">Find my Alowishus <span>&#8594;</span></a>
+                        </div>
+                    </div>
+                    <div class="footer__right anim-items anim-no-hide">
+                        <div class="footer__title">
+                            First One’s On Us!
+                        </div>
+                        <div class="footer__email">
+                            <input placeholder="E-mail" type="text">
+                        </div>
+                        <div class="footer__button">
+                            <a href="">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__information anim-items anim-no-hide">
+                    <div class="footer__text">
+                        Copytright © 2022 <span>Alowishus Delicious</span>
+                    </div>
+                    <div class="footer__text">
+                        Terms of Use | Privacy Policy
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- End of the "footer" section -->
+
+        <div id="back_to_top" class="back_to_top">
+            <img src="./Img/arrow.png" alt="">
+        </div>
+
+        <div class="modal">
+            <div class="modal__body">
+                <div class="modal__glass">
+                    <img src="./Img/picture5.png" alt="">
+                </div>
+                <button class="modal__close">&#10006</button>
+                <div class="modal__title">
+                    enter email below to unlock
+                </div>
+                <form class="modal__form" action="#" method="post" enctype="multipart/form-data">
+                    <div class="modal__email">
+                        <input placeholder="Enter Email" type="text">
+                    </div>
+                    <div class="modal__agreement">
+                        <input type="checkbox" checked>
+                        <div class="modal__text">Yes, I'd like to receive news and special offers.</div>
+                    </div>
+                    <div class="modal__button">
+                        <a href="">Let's go</a>
+                    </div>
+                </form>                    
+            </div>
+        </div>
+        
     </div>
 
+    <script src="SwiperJS/swiper.js"></script>
     <script src="Particle.JS/particles.js"></script>
     <script src="App.JS/app.js"></script>
     <script src="JQuery/JQuery.js"></script>
